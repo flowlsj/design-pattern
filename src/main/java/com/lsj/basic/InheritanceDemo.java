@@ -1,10 +1,37 @@
 package com.lsj.basic;
 
+
+class Calculator 
+{
+    public int add(int i, int j) 
+    {
+        System.out.println("In add(int i, int j)");
+        return i + j;
+    }
+    
+    public int sub(int i, int j) 
+    {
+        System.out.println("In Calculator.sub(int i, int j)");
+        return i - j;
+    }
+    
+    public int add(int ...i)
+    {
+        System.out.println("In add(int ...i)");
+        int sum = 0;
+        for(int j : i)
+        {
+            sum += j;
+        }
+        return sum;
+    }
+}
+
 class CalculatorPlus extends Calculator
 {
 	public int sub(int i, int j)
 	{
-		System.out.println("In sub(int i, int j)");
+		System.out.println("In CalculatorPlus.sub(int i, int j)");
 		return i - j;
 	}
 }
@@ -12,8 +39,8 @@ class CalculatorPlus extends Calculator
 public class InheritanceDemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		CalculatorPlus cp = new CalculatorPlus();
+		
+	    Calculator cp = new CalculatorPlus();
 		int result = cp.sub(6, 1);
 		System.out.println(result);
 	}

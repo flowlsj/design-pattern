@@ -13,6 +13,7 @@ public class ForLoop {
       my_list.add(3);
       my_list.add(7);
       Integer[] new_list = new Integer[10];
+      // Will throw exception
       forLoop(my_list.toArray(new_list));
    }
    

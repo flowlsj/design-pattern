@@ -35,7 +35,7 @@ class Publisher implements Subject{
 
     @Override
     public void registerObserver(Observer obj) {
-        // TODO Auto-generated method stub
+        
         int index = this.observerList.indexOf(obj);
         if (index == -1){
             this.observerList.add(obj);
@@ -44,7 +44,7 @@ class Publisher implements Subject{
 
     @Override
     public void removeObserver(Observer obj) {
-        // TODO Auto-generated method stub
+        
         int index = this.observerList.indexOf(obj);
         if (index != -1){
             this.observerList.remove(index);
@@ -53,7 +53,7 @@ class Publisher implements Subject{
 
     @Override
     public void notifyObserver() {
-        // TODO Auto-generated method stub
+        
         for (Observer obj : this.observerList){
             obj.update(this);
         }
@@ -61,13 +61,13 @@ class Publisher implements Subject{
 
     @Override
     public Object getMessage() {
-        // TODO Auto-generated method stub
+        
         return this;
     }
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
+        
         return "Publisher " + id;
     }
 }
@@ -76,7 +76,7 @@ class Customer implements Observer{
 
     @Override
     public void update(Subject sub) {
-        // TODO Auto-generated method stub
+        
         Object obj = sub.getMessage();
         System.out.println(obj.toString());
     }
@@ -86,7 +86,7 @@ class Customer implements Observer{
 public class ObserverDemo {
 
    public static void main(String[] args) {
-       // TODO Auto-generated method stub
+       
        Subject sub = new Publisher();
        Observer observer1 = new Customer();
        Observer observer2 = new Customer();

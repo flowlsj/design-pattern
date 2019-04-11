@@ -11,7 +11,7 @@ interface Sigle
 
 public class AnonymousDemo {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		A a = new A() {
 			public void show() {
 				System.out.println("In anonymous class extends A");

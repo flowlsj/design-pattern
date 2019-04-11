@@ -65,11 +65,16 @@ class Hello2 implements Runnable {
 public class ThreadDemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Hi obj1 = new Hi();
 		Hello obj2 = new Hello();
 		obj1.start();
 		obj2.start();
+		
+		Thread hi2 = new Thread(new Hi2());
+		Thread hello2 = new Thread(new Hello2());
+		hi2.start();
+		hello2.start();
 	}
 
 }

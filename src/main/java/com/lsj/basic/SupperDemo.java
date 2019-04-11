@@ -24,17 +24,19 @@ class B extends A
 		super(a);
 		System.out.println("In B(int a)");
 	}
-	public void show() {
-		super.show();
-	}
+//	public void show() {
+//		super.show();
+//	}
 }
 
 public class SupperDemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		B b = new B(5);
-		b.show();
+		B bDefault = new B();
+		bDefault.show();
+		
+		B bArgument = new B(5);
+		bArgument.show();
 	}
 
 }

@@ -1,9 +1,4 @@
-package com.lsj.basic;;
-
-abstract class Human
-{
-	public abstract void eat();
-}
+package com.lsj.basic;
 
 class Printer
 {
@@ -19,10 +14,10 @@ class Printer
 	}
 }
 
-public class AbstractDemo {
+public class OverloadDemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Printer printer = new Printer();
 		printer.show(4);
 		printer.show(4.4);

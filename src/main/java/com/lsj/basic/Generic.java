@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Generic {
    public static void main(String[] args) {
-      // TODO Auto-generated method stub
+      
       printT("Hello", 1);
       printT(1, 1.1);
       printT(1.1, 2.2);

@@ -24,7 +24,7 @@ class Swordsman extends Warrior{
 
     @Override
     void fight() {
-        // TODO Auto-generated method stub
+        
         System.out.println("Swordsman fight");
     }
     
@@ -38,7 +38,7 @@ class Blademaster extends Warrior {
 
     @Override
     void fight() {
-        // TODO Auto-generated method stub
+        
         System.out.println("Blademaster fight");
     }
     
@@ -63,14 +63,14 @@ class Excalibur extends WarriorWeapon {
 
     @Override
     void fight() {
-        // TODO Auto-generated method stub
+        
         this.warrior.fight();
         System.out.println("Fight with Excalibur");
     }
 
     @Override
     public String getDescription() {
-        // TODO Auto-generated method stub
+        
         return this.warrior.getDescription() + " + excalibur";
     }
     
@@ -80,14 +80,14 @@ class Sabre extends WarriorWeapon {
 
     @Override
     void fight() {
-        // TODO Auto-generated method stub
+        
         this.warrior.fight();
         System.out.println("Fight with Sabre");
     }
 
     @Override
     public String getDescription() {
-        // TODO Auto-generated method stub
+        
         return this.warrior.getDescription() + " + sabre";
     }
     

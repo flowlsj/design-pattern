@@ -3,7 +3,7 @@ package com.lsj.basic;
 public class ArrayDemo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		int nums[] = new int[4];
 		
 		for(int i = 0; i < nums.length; i++)
@@ -19,7 +19,7 @@ public class ArrayDemo {
 		System.out.println();
 		
 		int jaggedArray[][] = {
-				{1,2,3,4},
+		        {1,2,3,4},
 				{5,6,7},
 				{8,9}
 		};
