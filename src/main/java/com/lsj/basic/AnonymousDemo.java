@@ -13,6 +13,7 @@ public class AnonymousDemo {
 	public static void main(String[] args) {
 		
 		A a = new A() {
+			@Override
 			public void show() {
 				System.out.println("In anonymous class extends A");
 			}

@@ -29,7 +29,8 @@ class Calculator
 
 class CalculatorPlus extends Calculator
 {
-	public int sub(int i, int j)
+	@Override
+    public int sub(int i, int j)
 	{
 		System.out.println("In CalculatorPlus.sub(int i, int j)");
 		return i - j;

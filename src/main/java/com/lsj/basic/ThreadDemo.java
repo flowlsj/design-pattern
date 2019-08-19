@@ -2,6 +2,7 @@ package com.lsj.basic;
 
 class Hi extends Thread
 {
+	@Override
 	public void run() {
 		for(int i=0; i<5; i++)
 		{
@@ -18,6 +19,7 @@ class Hi extends Thread
 
 class Hello extends Thread
 {
+	@Override
 	public void run() {
 		for(int i=0; i<5; i++)
 		{
@@ -33,6 +35,7 @@ class Hello extends Thread
 }
 
 class Hi2 implements Runnable {
+	@Override
 	public void run() {
 		for(int i=0; i<5; i++)
 		{
@@ -48,6 +51,7 @@ class Hi2 implements Runnable {
 }
 
 class Hello2 implements Runnable {
+	@Override
 	public void run() {
 		for(int i=0; i<5; i++)
 		{

@@ -56,6 +56,7 @@ abstract class WarriorWeapon extends Warrior {
         this.warrior = warrior;
     }
 
+    @Override
     public abstract String getDescription();
 }
 
